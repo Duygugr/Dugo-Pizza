@@ -7,7 +7,7 @@ import {store} from "./redux/Store.jsx"
 
 createRoot(document.getElementById('root')).render(
     <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/Dugo-Pizza">
     <App />
     </BrowserRouter>
     </Provider>
