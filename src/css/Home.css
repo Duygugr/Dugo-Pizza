@@ -1,0 +1,396 @@
+.header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 0px 5vw;
+}
+
+.header-container{
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+
+
+.header .logo{
+    width: 200px;
+    height: 150px;
+    margin-left: -20px;
+}
+
+.nav-list{
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: clamp(15px, 4vw, 55px);
+    font-weight: bold;
+}
+
+
+
+.banner-info{
+    font-size: 18px;
+}
+
+.order{
+    height: 40px;
+    width: 150px;
+    font-size: 15.5px;
+    border-radius: 10px;
+    background-color: #ff6b00;
+    border: 0px solid white;
+    font-weight: bold;
+    color: white;
+    margin-top: -15px;
+}
+
+button:hover{
+    transform: scale(1.01);
+}
+
+
+
+.header a {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 80vw;
+    max-height: 642px; 
+    position: relative;
+    z-index: 0;
+
+}
+
+.banner-text{
+    position: absolute;
+    z-index: 1;
+    margin: 180px 0px 0px 5%;
+    color: white;
+}
+
+.banner-text h1{
+    font-size: clamp(18px, 5vw, 60px);
+    font-weight: 900;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 160px ;
+    margin-bottom: 200px;
+    padding: 50px 0px 50px 5%;
+    background-color: rgb(5, 0, 0);
+    gap: 50px;
+    height: auto;
+    width: 100%;
+    color: white;
+   
+}
+
+.feature{
+    flex: 1 1 20%;
+    display: flex;
+    white-space: nowrap; 
+    border-right: 1px solid gray;
+    
+}
+
+.feature:last-child{
+    border-right: none;
+}
+
+
+.feature-icon{
+    color: #ff6b00;
+    font-size: 37px;
+    margin-right: 30px;
+}
+
+.feature-info h3{
+    margin-bottom: 5px;
+}
+
+.product-info{
+    display: flex;
+}
+
+.pizza-container{
+    display: grid;
+    margin-left: 65px;
+    margin-right: 55px;
+    gap: 2rem;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+
+}
+
+.pizza img{
+    width: 200px;
+    height: 200px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.pizza{
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    box-shadow: 0px 4px 15px  gray;
+    width: 100%;
+    max-width: 280px; 
+    border-radius: 10px;
+    padding: 8px 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.pizza h2{
+    margin:5px 0px;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.pizza .price{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product-icon{
+    color: #ff6b00;
+    font-size: 30px;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.allPizzas{
+    display: block;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: #ff6b00;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid rgba(49, 49, 49, 0.288);
+}
+
+.campaign img{
+    height: 200px;
+    border-radius: 10px;
+    width: 100%;  
+    margin-top: 10px;
+    max-width: 550px;
+    z-index: 1;
+    position: absolute;
+}
+
+.campaigns{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:  5%;
+    margin-top: 180px;
+    column-gap: 28%;
+    background-color: rgb(19, 19, 19);
+    height: auto;
+    padding-bottom: 80px;
+    padding-right: 10%;
+}
+
+.campaigns h1{
+    margin-bottom: 25px;
+}
+
+.campaign p , h4{
+    position: relative;
+    font-size: 23px;
+    color: white;
+    font-weight: 900;
+    z-index: 2;
+    padding: 30px 60px 20px 50px;
+}
+
+.campaign h4{
+    margin-bottom: 50px;
+}
+
+.footer{
+    background-color: rgb(19, 19, 19);
+    margin-top: 200px;
+    padding: 0px 115px 0px 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+    column-gap: 10%;
+}
+
+.footer-left p{
+    margin-top: 100px;
+    margin-left: 22px;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    margin-left: 22px;
+    margin-top: 25px;
+    
+}
+
+.footer h3{
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+.footer-links a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links li{
+    list-style-type: none;
+}
+
+.footer-links , .footer-right{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.footer-icon{
+    margin-right: 8px;
+}
+
+.copyright{
+    border-top: 1px solid rgba(104, 104, 104, 0.178);
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p{
+    padding-top: 25px;
+}
+
+.copyright-icons{
+    display: flex;
+    gap: 28px;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
+
+@media (max-width:992px) {
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 47px;
+        width: 400px;
+        border-radius: 15px;
+        background-color: rgb(10, 10, 10);
+        padding: 60px 100px;
+         
+    }
+
+    .nav-container.active {
+        display: flex ;
+    }
+
+    .nav-list{
+        display: flex ;
+        flex-direction: column ;
+        
+    }
+
+    .hamburger{
+        display: block;
+        color: white;
+        margin-bottom: 20px;
+
+    }
+
+    .order{
+        display: block ;
+        margin-top: 30px;
+
+    }
+
+    .campaign img{
+        width: 80%;  
+        max-width: 730px;
+
+    }
+
+    .campaigns {
+        padding-right: 5%;
+        flex-direction: column;
+    }
+      
+}
+
+@media (max-width:576px){
+    .banner-info{
+        font-size: 14px;
+    }
+
+     .banner-text{
+        margin: 140px 0px 0px 5%;
+
+    } 
+
+}
+
+@media (max-width:400px){
+    .banner{
+        width: 100%;
+        height: 110vw;
+
+    }
+
+    .banner-info{
+        width: 70%;
+    }
+
+}

@@ -1,0 +1,32 @@
+.products-pages .header a{
+    color: black;
+}
+
+.products-pages h1{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 170px;
+    font-size: 40px;
+     text-shadow: 1px 1px 1px #ff6a006b;
+}
+
+.pizza-container{
+    margin-top: 30px;
+}
+
+.product-icon.added{
+    color: green;
+} 
+
+@media (max-width:992px){
+    .products-pages .header a{
+        color: white;
+    }
+
+    .products-pages .hamburger{
+        color: black;
+    }
+
+
+}
+
