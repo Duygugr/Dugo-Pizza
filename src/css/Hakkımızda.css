@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
-    padding-top: -100px;
 }
 
 .story-info{
