@@ -21,7 +21,7 @@
 
 .story{
     padding-left: 75px;
-    padding-top: 750px;
+    margin-top: 340px;
     display: flex;
     justify-content: space-between;
     gap: 70px;
