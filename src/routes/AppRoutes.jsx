@@ -8,14 +8,15 @@ import Basket from "../components/Basket"
 function AppRoutes() {
   return (
     <div>
-      <Routes>
+      <HashRouter>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hakkimizda" element={<Hakkımızda/>} />
         <Route path="/ürünler" element ={<Ürünler />}/>
         <Route path="/iletişim" element = {<İletişim />} />
         <Route path="/sepet" element = {<Basket />} />
-
       </Routes>
+      </HashRouter>
     </div>
   )
 }
