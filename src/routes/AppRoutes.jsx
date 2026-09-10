@@ -1,4 +1,4 @@
-import {Route , Routes} from "react-router-dom"
+import { HashRouter as Route , Routes} from "react-router-dom"
 import Home from '../pages/Home'
 import Hakkımızda from '../pages/Hakkımızda'
 import Ürünler from "../pages/Ürünler"
