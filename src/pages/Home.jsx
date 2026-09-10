@@ -11,6 +11,7 @@ import img from "../assets/banner.jpeg"
 import { useDispatch } from 'react-redux'
 import {addToBasket} from "../redux/BasketSlice"
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -19,6 +20,8 @@ function Home(){
         const populerPizzas = pizzas.slice(0,4)
 
         const dispatch = useDispatch()
+
+        const navigate = useNavigate()
 
       const [added, setAdded] = useState(false)
 
@@ -43,7 +46,7 @@ function Home(){
                   <i><p className='banner-info' >Taptaze malzemelerle hazırlanmış<br />
                       pizzalarımızla lezzetin keyfini çıkarın.
                   </p></i>
-                  <button  style={{width:"190px", height:"45px" , display:"flex" , gap:"14px" , justifyContent:"center" , alignItems:"center" , marginTop:"22px"}} className='order'>Sipariş ver <FaArrowRight />
+                  <button  style={{width:"190px", height:"45px" , display:"flex" , gap:"14px" , justifyContent:"center" , alignItems:"center" , marginTop:"22px"}} className='order' onClick={()=> navigate("/sepet")}>Sipariş ver <FaArrowRight />
                   </button>
               </div>
       
@@ -77,7 +80,7 @@ function Home(){
     ))}
 </div>
 
-      <button className='allPizzas'>Tümünü gör</button>
+      <button onClick={()=> navigate("/ürünler")} className='allPizzas'>Tümünü gör</button>
     
       <div className='campaigns'>
         <h1 style={{ paddingTop:"50px", width:"100%" , color:"white"}}>Özel Kampanyalar</h1>

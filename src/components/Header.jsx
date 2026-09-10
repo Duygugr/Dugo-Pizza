@@ -21,7 +21,7 @@ function Header() {
                     <li><Link to="/ürünler"> Ürünler</Link></li>
                     <li><Link to="/iletişim"> İletişim</Link></li>      
                 </ul>   
-                <button className='order'  ><Link to="/sepet">Sipariş ver</Link> </button>
+                <button className='order'><Link to="/sepet">Sipariş ver</Link> </button>
             </nav>
 
             
